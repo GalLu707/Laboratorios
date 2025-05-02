@@ -45,6 +45,7 @@ public class pagos {
               }else{
                   System.out.println("Su pago de horas extra es:"+ horascate1);
               }
+              System.out.println("sus horas base son de:"+ 1439.6 + horascate1);
                 break;
             case 2:
                 int horascate2= HorasExtras*50;
@@ -53,6 +54,7 @@ public class pagos {
               }else{
                   System.out.println("Su pago de horas extra es:"+ horascate2);
               }
+              System.out.println("sus horas base son de:"+ 1439.6 + horascate2);
                 break;
             case 3:
                 int horascate3= HorasExtras*85;
@@ -61,6 +63,7 @@ public class pagos {
               }else{
                   System.out.println("Su pago de horas extra es:"+ horascate3);
               }
+              System.out.println("sus horas base son de:"+ 1439.6 + horascate3);
                 break;
             case 4:
                 System.out.println("Usted no posee horas extra");
@@ -71,7 +74,7 @@ public class pagos {
                 
         }
       if (HorasMes>40){
-          System.out.println("sus horas base son de:1439.6");
+          System.out.println("sus horas base son de:"+ 1439.6 + HorasExtras);
       }else{
           System.out.println("Su salario es de"+  HorasMes*pagoPhora);
           

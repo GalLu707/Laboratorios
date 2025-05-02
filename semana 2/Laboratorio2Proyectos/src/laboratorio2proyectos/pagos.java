@@ -36,8 +36,6 @@ public class pagos {
         
          System.out.println("Plantilla \nNombre del empleado:"+ Nombre +"\nApellido:"+ Apellido+ "\nsu codigo es:" + Codigo);
             double salario= HorasMes*pagoPhora;
-            if (salario> 1439.6){
-                System.out.println("sus salario base es de:"+salarioBase);
         
         switch(catego) {
             case 1:
@@ -73,7 +71,7 @@ public class pagos {
                 
         }
       if (HorasMes>40){
-          System.out.println("sus horas base son de:"+ pagoPhora*HorasAtrabajar);
+          System.out.println("sus horas base son de:1439.6");
       }else{
           System.out.println("Su salario es de"+  HorasMes*pagoPhora);
           

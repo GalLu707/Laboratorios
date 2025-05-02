@@ -7,10 +7,20 @@ package laboratorio2proyectos;
 /**
  *
  * @author USER
- */
+ */ 
+import java.time.LocalDateTime; //fechasss
+import java.time.format.DateTimeFormatter; //formato para la fecha
+import java.util.Scanner; //el scanner de siempre 
 public class fechaass {
     //clases ejercicio 1
+   
     public static void main(String[]args){
+        Scanner Fecha = new Scanner(System.in);
+        DateTimeFormatter formatofecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        
+        System.out.println("ingrese la primera fecha en formato (dd/MM/yyyy):");
+        String Fechausuario = Fecha.next();
+        Fecha.useDelimiter("\n");
         
     }
     

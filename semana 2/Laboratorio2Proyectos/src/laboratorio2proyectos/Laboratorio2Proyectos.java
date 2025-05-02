@@ -15,6 +15,8 @@ public class Laboratorio2Proyectos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //when haces tus momazos 
+        System.out.println("hola");
     }
     
 }

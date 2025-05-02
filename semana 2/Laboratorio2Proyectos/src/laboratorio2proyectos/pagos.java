@@ -13,6 +13,7 @@ public class pagos {
     public static void main(String[]args){
         double pagoPhora = 35.99;
         int HorasAtrabajar= 40;
+        double salarioBase= pagoPhora*HorasAtrabajar; 
         Scanner obj = new Scanner(System.in);
         obj.useDelimiter("\n");
         
@@ -33,36 +34,51 @@ public class pagos {
         
         int HorasExtras = HorasMes - HorasAtrabajar; 
         
-        if(HorasExtras<0){
-           System.out.println("usted no posee horas extra");
-        } else {
-        System.out.println("sus horas extra son:"+ HorasExtras);
-        }
-        
-        System.out.println("Plantilla \nNombre del empleado:"+ Nombre +"\nApellido:"+ Apellido+ "\nsu codigo es:" + Codigo);
+         System.out.println("Plantilla \nNombre del empleado:"+ Nombre +"\nApellido:"+ Apellido+ "\nsu codigo es:" + Codigo);
+            double salario= HorasMes*pagoPhora;
+            if (salario> 1439.6){
+                System.out.println("sus salario base es de:"+salarioBase);
         
         switch(catego) {
             case 1:
-                
-              System.out.println("wiwiwiwi");
-                
+              int horascate1= HorasExtras*40;
+              if (horascate1<0){
+                  System.out.println("total de horas extra:0");  
+              }else{
+                  System.out.println("Su pago de horas extra es:"+ horascate1);
+              }
                 break;
             case 2:
-                System.out.println("papu pro");
+                int horascate2= HorasExtras*50;
+              if (horascate2<0){
+                  System.out.println("total de horas extra:0");  
+              }else{
+                  System.out.println("Su pago de horas extra es:"+ horascate2);
+              }
                 break;
             case 3:
+                int horascate3= HorasExtras*85;
+              if (horascate3<0){
+                  System.out.println("total de horas extra:0");  
+              }else{
+                  System.out.println("Su pago de horas extra es:"+ horascate3);
+              }
                 break;
-            case 4: 
-                System.out.println("papu, papu");
-                break;
+            case 4:
+                System.out.println("Usted no posee horas extra");
+                break; 
             default:
                 System.out.println("su opcion no es valida");
                 break; 
+                
         }
-        
-           
-        
-        //int horaExtra= HorasAtrabajar;
+      if (HorasMes>40){
+          System.out.println("sus horas base son de:"+ pagoPhora*HorasAtrabajar);
+      }else{
+          System.out.println("Su salario es de"+  HorasMes*pagoPhora);
+          
+      }
     }
-    
-}
+    }  
+    }
+

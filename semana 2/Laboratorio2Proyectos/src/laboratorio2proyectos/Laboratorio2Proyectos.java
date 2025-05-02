@@ -8,15 +8,18 @@ package laboratorio2proyectos;
  *
  * @author USER
  */
+import java.util.Scanner;
+
 public class Laboratorio2Proyectos {
 
-    /**
-     * @param args the command line arguments
-     */
+   //Tarea numero 2Tiempo
     public static void main(String[] args) {
-        // TODO code application logic here
-        //when haces tus momazos 
-        System.out.println("hola");
+        System.out.println("conversion de numro entero a horas, minutos y segundos :)");
+        System.out.println("ingrese un numero entero");
+        Scanner obj= new Scanner(System.in);
+        int NumeroUsuario = obj.nextInt();
+        
+        
     }
     
 }

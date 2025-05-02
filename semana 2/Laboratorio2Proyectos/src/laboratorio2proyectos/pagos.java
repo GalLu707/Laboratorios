@@ -17,15 +17,31 @@ public class pagos {
         Scanner obj = new Scanner(System.in);
         int HorasMes = obj.nextInt();
         System.out.println("Ingrese la categoria a la que pertenece:");
-        String catego = obj.next();
+        int catego = obj.nextInt();
         obj.useDelimiter("\n");
+        int HorasExtras = HorasMes - HorasAtrabajar; 
         
-        switch{
+        if(HorasExtras<0){
+           System.out.println("usted no posee horas extra");
+        } else {
+        System.out.println("sus horas extra son:"+ HorasExtras);
+        }
+        
+        switch(catego) {
             case 1:
-            case 2:
-            case 3:
-            case 4: 
+              // int Hextra=  
                 
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4: 
+                System.out.println("papu, papu");
+                break;
+            default:
+                System.out.println("su opcion no es valida");
+                break; 
         }
         
            

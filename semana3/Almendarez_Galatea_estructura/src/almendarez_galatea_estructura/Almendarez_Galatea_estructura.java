@@ -73,8 +73,23 @@ public class Almendarez_Galatea_estructura {
                 int Numeroo = NumRan.nextInt(101); 
                 System.out.println("su numero generado fue: "+ Numeroo);
                 
-                boolean NUMPRIMO = true;
-               // if(Numeroo)
+                boolean NUMPRIMO = true;//aqui se asume que es primo ya lueo se verifica si si o no
+                if(Numeroo<=1){
+                    NUMPRIMO= false;
+                }else {
+                    for (int otroconta= 2; otroconta<= Math.sqrt(Numeroo); otroconta++){
+                    if(Numeroo % otroconta == 0){
+                        NUMPRIMO=false;
+                        break;
+                            }
+                    }
+                }
+                if(NUMPRIMO){
+                    System.out.println("ES PRIMO YAY");
+            }else{
+                    System.out.println("NO es primo");
+                }
+                
                 
                 break;
             case 4:
@@ -169,5 +184,6 @@ public class Almendarez_Galatea_estructura {
         }   
     
  }   //del switch del programa completo 
+}
 }
 }

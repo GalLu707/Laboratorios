@@ -14,6 +14,7 @@ import java.util.Random;
 public class Almendarez_Galatea_estructura {
    
     public static void main(String[] args) {
+        int contadogeneral=0;
         int opcion=0;
         Scanner obj = new Scanner(System.in);
         obj.useDelimiter("\n");
@@ -38,6 +39,7 @@ public class Almendarez_Galatea_estructura {
         
         switch(opcion){
             case 1:
+                contadogeneral++;
                 System.out.println("palabra al reves-------------");
                 System.out.println("Ingrese la cantidad de palabras");
                 int cantidad = obj.nextInt();//numero de palabras que va a ingresar el usuario
@@ -58,16 +60,21 @@ public class Almendarez_Galatea_estructura {
                 }   
                 break;
             case 2:
+                contadogeneral++;
                 System.out.println("numero perfecto-------------");
                 
                 break;
             case 3:
+                contadogeneral++;
                 System.out.println("numero primo-------------");
                 System.out.println("generando un numero random\n.\n.\n.");
+                Random NumRan = new Random();
+                //int Numeroo = ran
                 
                 
                 break;
             case 4:
+                contadogeneral++;
                 System.out.println("votaciones-------------");
                 int votosazul=0;
                 int votosrojo=0;
@@ -148,6 +155,7 @@ public class Almendarez_Galatea_estructura {
                   
             case 5:
                 //cierra el programa 
+                System.out.println("veces que ingreso a las opciones: "+ contadogeneral);
                 System.out.println("saliendo del sistema\n.\n.\n.\n ADIOS :D");
                 
                 break;

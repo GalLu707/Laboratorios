@@ -69,8 +69,12 @@ public class Almendarez_Galatea_estructura {
                 System.out.println("numero primo-------------");
                 System.out.println("generando un numero random\n.\n.\n.");
                 Random NumRan = new Random();
-                //int Numeroo = ran
                 
+                int Numeroo = NumRan.nextInt(101); 
+                System.out.println("su numero generado fue: "+ Numeroo);
+                
+                boolean NUMPRIMO = true;
+               // if(Numeroo)
                 
                 break;
             case 4:
